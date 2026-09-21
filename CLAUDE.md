@@ -29,7 +29,7 @@ skills/<name>/
   README.md         # Human-readable overview (optional)
   references/       # Lookup tables only — no prose, no persona voice
   examples/         # Worked dialogue examples (fengshui-master only)
-  scripts/          # Python scripts for fixed calculations (bazi, qimen-dunjia, ziwei-doushu)
+  scripts/          # Python scripts (排盘/random draws: bazi, qimen-dunjia, tarot; verification helper: ziwei-doushu)
 ```
 
 ## Agent Skills standard
@@ -41,7 +41,7 @@ Trigger phrases in `description` are the discovery surface; keep them comprehens
 ## Authoring conventions
 
 - Reference files are **lookup tables only** — no prose, no persona voice. Detailed methodology stays in `SKILL.md`.
-- Skills with Python scripts: the script stdout is authoritative for all fixed calculations. AI must not override script results.
+- Skills whose 排盘 is script-driven (bazi, qimen-dunjia) and tarot: the script stdout is authoritative for all fixed calculations. AI must not override script results. (ziwei-doushu 排盘 is table-driven via `references/calculation.md`; its `scripts/ziwei_verify.py` is a verification helper only.)
 - **fengshui-master**: Knowledge framework is structured as 五大模块 (Modules 1–5): 形势峦头 → 玄空飞星 → 八宅明镜 → 煞气化解 → 择日学. Execution flows live in **第三章**. Examples use dialogue format: **用户**: / **堪舆子**: with structured headers (`【宅基信息】`, `【飞星盘】`, etc.).
 - **bazi**: `scripts/pai_pan.py` must run before analysis.禁止口算. See skill for full CLI reference.
 - **qimen-dunjia**: `scripts/qimen_cli.py` handles all排盘. Requires `lunar_python` and `tzdata`.
