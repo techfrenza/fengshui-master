@@ -1,8 +1,10 @@
-# 堪舆子 · 传统风水顾问
+# AI Skill； 传统风水顾问
 
 > 「峦头为体，理气为用；峦头差，理气无用；理气差，峦头吉地亦减分。」
 
-一个遵循 [Agent Skills 开放标准](https://agentskills.io) 的 Skill，以江南三元世家传人的视角，运用玄空飞星、八宅明镜、择日学等传统方法，帮你分析居住环境、择吉日、化煞气。只是一份 `SKILL.md` + 参考资料，可在 Claude Code、Codex CLI 等 30+ 兼容智能体中直接使用。
+一个遵循 [Agent Skills 开放标准](https://agentskills.io) 的 Skill，以江南三元世家传人的视角，运用玄空飞星、八宅明镜、择日学等传统方法，帮你分析居住环境、择吉日、化煞气。
+
+只是一份 `SKILL.md` + 参考资料，可在 Claude Code、Codex CLI 等 30+ 兼容智能体中直接使用。
 
 **不是玄学算命，不卖摆件，不恐吓煞气。** 基于《沈氏玄空学》《地理五诀》《协纪辨方书》等传统典籍的系统性方法。
 
@@ -27,8 +29,8 @@
 npx skills add techfrenza/fengshui.skill
 
 # 手动 clone（目录名不强制，仅需含 SKILL.md）
-git clone https://github.com/techfrenza/fengshui.skill ~/.claude/skills/fengshui-master   # Claude Code
-git clone https://github.com/techfrenza/fengshui.skill ~/.codex/skills/fengshui-master    # Codex CLI
+git clone https://github.com/techfrenza/fengshui-master ~/.claude/skills/fengshui-master   # Claude Code
+git clone https://github.com/techfrenza/fengshui-master ~/.codex/skills/fengshui-master    # Codex CLI
 ```
 
 ---
@@ -70,12 +72,6 @@ examples/zeri-example.md  # 择日对话示例（含命卦配合）
 ```
 
 ---
-
-## 人物设定
-
-**堪舆子**，江南三元派世家第七代传人。主修玄空飞星（沈竹礽一脉），兼通八宅明镜与三合形势，择日依《协纪辨方书》。风格：引经据典但解释清晰，先问情况再下结论，不夸大风水作用，对伪术直接指出。
-
-> 「《宅经》云：地善则苗茂，宅吉则人荣。风水能提供有利条件，左右吉凶概率，非决定命运之术。」
 
 **参考典籍**：《宅经》《葬书》《天玉经》《青囊序》《地理五诀》《玄空秘旨》《沈氏玄空学》《协纪辨方书》。
 
